@@ -1,0 +1,60 @@
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+  
+.equal {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  background-color: blue;
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 2px solid  white;
+  border-radius: 5rem;
+  padding: 10px;
+  outline: none;
+}
+
+#input {
+  font-size: 50px;
+}
+
+.num, #decimal {
+  background-color: rgb(160, 160, 160);
+}
+
+.calculator-grid > #decimal:hover {
+  background-color: #f08000;
+}
+
+.clear {
+  background-color: blue;
+}
+
+.operator {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+  .calculator-grid > button:hover {
+    background-color: #f08000;
+  }
+
+  #input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+
+  #zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }     
