@@ -9,26 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="calculator-grid">
-        <input id="input" readonly type="text" >
-        <button class="clear">AC</button>
-        <button class="operator" value="*">&times;</button>
-        <button class="operator" value="/">÷</button>
-        <button class="back"></button>
-        <button class="num" value="7">7</button>
-        <button class="num" value="8">8</button>
-        <button class="num" value="9">9</button>
-        <button class="operator" value="+">+</button>
-        <button class="num" value="4">4</button>
-        <button class="num" value="5">5</button>
-        <button class="num" value="6">6</button>
-        <button class="operator" value="-">-</button>
-        <button class="num" value="1">1</button>
-        <button class="num" value="2">2</button>
-        <button class="num" value="3">3</button>
-        <button class="equal">=</button>
-        <button class="num" id="zero" value="0">0</button>
-        <button id="decimal" value=".">.</button>
-    </div>
+    <main>
+        <div class="calculator-grid">
+            <textarea id="input" readonly type="text" ></textarea>
+            <button class="clear">AC</button>
+            <button id="operator" class="operator" value="x">&times;</button>
+            <button id="operator" class="operator" value="/">÷</button>
+            <button id="back" >DEL</button>
+            <button class="num" value="7">7</button>
+            <button class="num" value="8">8</button>
+            <button class="num" value="9">9</button>
+            <button id="operator" class="operator" value="+">+</button>
+            <button class="num" value="4">4</button>
+            <button class="num" value="5">5</button>
+            <button class="num" value="6">6</button>
+            <button id="operator" class="operator" value="-">-</button>
+            <button class="num" value="1">1</button>
+            <button class="num" value="2">2</button>
+            <button class="num" value="3">3</button>
+            <button id="operator" class="equal">=</button>
+            <button class="num" id="zero" value="0">0</button>
+            <button id="decimal" value=".">.</button>
+        </div>
+    </main>
 </body>
 </html>
