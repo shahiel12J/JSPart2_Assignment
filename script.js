@@ -50,7 +50,10 @@ clearbtn.addEventListener('click', () => {
 })
 
 equal.addEventListener('click', () => {    
-    if(inputstring == '' ){
+    if(numString.includes("TT")){
+        clear();
+        input.value = "Error";
+    }else if(inputstring == ''){
         clear();
         input.value = "No Input";
     }else{
@@ -63,7 +66,7 @@ equal.addEventListener('click', () => {
             let num1 = num[i];
             let num2 = num[i+1];
             if(num2 == 0){
-                input.value = "Can't be done";
+                input.value = "Error";
             }else{
                 let operand1 = operand2[j];
                 operate(operand1,num1,num2);
